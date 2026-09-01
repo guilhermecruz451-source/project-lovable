@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T23:17:31.154658+00:00",
+  "generated_at": "2026-09-01T23:19:28.349075+00:00",
   "files": [
     {
       "path": "eslint.config.js",
@@ -50,6 +50,10 @@
       "bytes": 2048
     },
     {
+      "path": ".lovasiri/sync.json",
+      "bytes": 80
+    },
+    {
       "path": ".lovable/project.json",
       "bytes": 124
     },
@@ -63,7 +67,7 @@
     },
     {
       "path": "src/routes/index.tsx",
-      "bytes": 772
+      "bytes": 12226
     },
     {
       "path": "src/routes/__root.tsx",
@@ -354,6 +358,14 @@
     {
       "source": "src/routes/index.tsx",
       "target": "@tanstack/react-router"
+    },
+    {
+      "source": "src/routes/index.tsx",
+      "target": "lucide-react"
+    },
+    {
+      "source": "src/routes/index.tsx",
+      "target": "../components/ui/button"
     },
     {
       "source": "src/routes/__root.tsx",
