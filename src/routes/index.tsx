@@ -73,45 +73,45 @@ function Index() {
           </div>
         </section>
 
-        {/* Featured Categories Grid */}
+        {/* New Arrivals Section */}
         <section className="py-24 bg-background">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-end mb-12">
               <div>
-                <h2 className="text-3xl font-bold tracking-tight mb-2">Essentials</h2>
-                <p className="text-muted-foreground">The foundation of every wardrobe.</p>
+                <h2 className="text-3xl font-bold tracking-tight mb-2">New Arrivals</h2>
+                <p className="text-muted-foreground">The latest additions to our collection.</p>
               </div>
               <a href="#" className="hidden sm:flex items-center text-sm font-semibold hover:underline underline-offset-4">
-                View all <ChevronRight className="h-4 w-4 ml-1" />
+                Shop all <ChevronRight className="h-4 w-4 ml-1" />
               </a>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-10">
               {[
-                { name: "Shirts", image: "https://images.unsplash.com/photo-1596755094514-f87e32f6b717?q=80&w=800&auto=format&fit=crop" },
-                { name: "Denim", image: "https://images.unsplash.com/photo-1542272604-787c3835535d?q=80&w=800&auto=format&fit=crop" },
-                { name: "Outerwear", image: "https://images.unsplash.com/photo-1551028719-00167b16eac5?q=80&w=800&auto=format&fit=crop" },
-                { name: "Accessories", image: "https://images.unsplash.com/photo-1614252369475-531eba835eb1?q=80&w=800&auto=format&fit=crop" }
-              ].map((category) => (
-                <div key={category.name} className="group relative aspect-[3/4] overflow-hidden bg-zinc-100 cursor-pointer">
-                  <img 
-                    src={category.image} 
-                    alt={category.name}
-                    className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80"></div>
-                  <div className="absolute bottom-0 left-0 p-6 w-full flex items-center justify-between">
-                    <h3 className="text-xl font-bold text-white tracking-wide">{category.name}</h3>
-                    <div className="h-8 w-8 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center opacity-0 transform translate-x-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0">
-                      <ChevronRight className="h-4 w-4 text-white" />
-                    </div>
+                { name: "Heavyweight Field Jacket", price: "$285", category: "Outerwear", image: "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=800&auto=format&fit=crop" },
+                { name: "Selvedge Straight Denim", price: "$195", category: "Bottoms", image: "https://images.unsplash.com/photo-1542272604-787c3835535d?q=80&w=800&auto=format&fit=crop" },
+                { name: "Oxford Button-Down", price: "$125", category: "Shirts", image: "https://images.unsplash.com/photo-1596755094514-f87e32f6b717?q=80&w=800&auto=format&fit=crop" },
+                { name: "Leather Weekender", price: "$450", category: "Accessories", image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?q=80&w=800&auto=format&fit=crop" }
+              ].map((product) => (
+                <div key={product.name} className="group cursor-pointer">
+                  <div className="aspect-[3/4] overflow-hidden bg-zinc-100 mb-4 relative">
+                    <img 
+                      src={product.image} 
+                      alt={product.name}
+                      className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+                  </div>
+                  <div className="space-y-1">
+                    <p className="text-xs text-muted-foreground uppercase tracking-wider">{product.category}</p>
+                    <h3 className="text-sm font-medium text-foreground">{product.name}</h3>
+                    <p className="text-sm font-semibold">{product.price}</p>
                   </div>
                 </div>
               ))}
             </div>
             <div className="mt-8 sm:hidden flex justify-center">
               <Button variant="outline" className="w-full rounded-none h-12">
-                View all Essentials
+                Shop all New Arrivals
               </Button>
             </div>
           </div>
