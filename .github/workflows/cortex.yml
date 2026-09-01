@@ -38,7 +38,7 @@ jobs:
           extensions = {'.ts', '.tsx', '.js', '.jsx', '.css', '.scss', '.json', '.html', '.md', '.sql'}
           files = []
           edges = []
-          import_pattern = re.compile(r'''(?:from\s+|import\s*\(|require\s*\()s*['"]([^'"]+)''')
+          import_pattern = re.compile(r'''(?:from\s+|import\s*\(|require\s*\()\s*['"]([^'"]+)''')
 
           for path in root.rglob('*'):
               if not path.is_file() or any(part in ignored for part in path.parts) or path.suffix.lower() not in extensions:
@@ -82,8 +82,7 @@ jobs:
       - name: Commit generated context
         run: |
           mkdir -p .lovasiri
-          printf '{"updated_at":"%s","source":"lovasiri-cortex"}
-' "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > .lovasiri/sync.json
+          python -c "import datetime,json,pathlib; pathlib.Path('.lovasiri/sync.json').write_text(json.dumps({'updated_at': datetime.datetime.now(datetime.timezone.utc).isoformat(), 'source': 'lovasiri-cortex'}) + chr(10), encoding='utf-8')"
           git config user.name "Lovasiri"
           git config user.email "actions@users.noreply.github.com"
           git add graphify-out .lovasiri/sync.json
