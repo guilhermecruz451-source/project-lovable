@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T00:51:36.868230+00:00",
+  "generated_at": "2026-09-02T20:14:49.392845+00:00",
   "files": [
     {
       "path": "eslint.config.js",
@@ -66,8 +66,12 @@
       "bytes": 835
     },
     {
+      "path": "src/routes/product.$id.tsx",
+      "bytes": 5730
+    },
+    {
       "path": "src/routes/index.tsx",
-      "bytes": 14526
+      "bytes": 16462
     },
     {
       "path": "src/routes/__root.tsx",
@@ -354,6 +358,18 @@
     {
       "source": "src/hooks/use-mobile.tsx",
       "target": "react"
+    },
+    {
+      "source": "src/routes/product.$id.tsx",
+      "target": "@tanstack/react-router"
+    },
+    {
+      "source": "src/routes/product.$id.tsx",
+      "target": "lucide-react"
+    },
+    {
+      "source": "src/routes/product.$id.tsx",
+      "target": "../components/ui/button"
     },
     {
       "source": "src/routes/index.tsx",
