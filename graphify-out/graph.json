@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T23:27:41.856983+00:00",
+  "generated_at": "2026-09-02T00:51:36.868230+00:00",
   "files": [
     {
       "path": "eslint.config.js",
@@ -67,7 +67,7 @@
     },
     {
       "path": "src/routes/index.tsx",
-      "bytes": 12175
+      "bytes": 14526
     },
     {
       "path": "src/routes/__root.tsx",
