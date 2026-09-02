@@ -241,10 +241,10 @@ function Index() {
               <h4 className="text-stone-950 font-bold mb-6 uppercase tracking-wider text-sm">Support</h4>
               <ul className="space-y-4 text-sm">
                 <li><a href="#" className="hover:text-stone-950 transition-colors">FAQ</a></li>
-                <li><a href="#" className="hover:text-stone-950 transition-colors">Shipping & Returns</a></li>
+                <li><Link to="/shipping-policy" className="hover:text-stone-950 transition-colors">Shipping Policy</Link></li>
+                <li><Link to="/return-policy" className="hover:text-stone-950 transition-colors">Return & Refund Policy</Link></li>
                 <li><a href="#" className="hover:text-stone-950 transition-colors">Size Guide</a></li>
-                <li><a href="#" className="hover:text-stone-950 transition-colors">Garment Care</a></li>
-                <li><a href="#" className="hover:text-stone-950 transition-colors">Contact Us</a></li>
+                <li><Link to="/contact" className="hover:text-stone-950 transition-colors">Contact Us</Link></li>
               </ul>
             </div>
 
@@ -267,8 +267,8 @@ function Index() {
           <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-stone-200 text-xs font-semibold tracking-wide uppercase">
             <p>&copy; {new Date().getFullYear()} Atlas & Oak. All rights reserved.</p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <a href="#" className="hover:text-stone-950 transition-colors">Privacy Policy</a>
-              <a href="#" className="hover:text-stone-950 transition-colors">Terms of Service</a>
+              <Link to="/privacy-policy" className="hover:text-stone-950 transition-colors">Privacy Policy</Link>
+              <Link to="/terms-of-service" className="hover:text-stone-950 transition-colors">Terms of Service</Link>
             </div>
           </div>
         </div>
