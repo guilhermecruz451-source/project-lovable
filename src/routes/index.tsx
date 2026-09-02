@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ShoppingBag, User, Menu, ChevronRight, ArrowRight, Image as ImageIcon } from "lucide-react";
 import { Button } from "../components/ui/button";
+import imagem1 from "@/assets/uploads/imagem-1.png";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -216,7 +217,7 @@ function Index() {
               </div>
               <div className="order-1 lg:order-2">
                 <img 
-                  src="https://images.unsplash.com/photo-1520975954732-57dd22299614?q=80&w=1200&auto=format&fit=crop" 
+                  src={imagem1} 
                   alt="Trabalho artesanal" 
                   className="w-full h-[600px] object-cover sepia-[.2] contrast-125"
                 />
