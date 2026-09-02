@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { ShoppingBag, User, Menu, ChevronRight, ArrowRight } from "lucide-react";
 import { Button } from "../components/ui/button";
 
@@ -95,6 +95,41 @@ function Index() {
                   </div>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Featured Product */}
+        <section className="py-24 bg-white border-t border-stone-200">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <img 
+                  src="https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?q=80&w=800&auto=format&fit=crop" 
+                  alt="Premium Polo Shirt"
+                  className="w-full h-auto object-cover rounded-sm shadow-md"
+                />
+              </div>
+              <div className="flex flex-col justify-center">
+                <span className="text-sm font-bold tracking-widest uppercase mb-4 text-stone-500">Featured Item</span>
+                <h2 className="text-4xl md:text-5xl font-bold tracking-tighter mb-4">
+                  The Essential Polo
+                </h2>
+                <div className="flex items-center mb-6 space-x-4">
+                  <span className="text-2xl font-bold text-stone-950">$90.00</span>
+                  <span className="text-lg text-stone-400 line-through">$149.90</span>
+                </div>
+                <p className="text-lg text-stone-600 font-serif mb-8 leading-relaxed">
+                  Crafted for the modern gentleman, our Essential Polo combines classic styling with uncompromising comfort. Perfect for any occasion.
+                </p>
+                <div className="flex sm:flex-row flex-col gap-4">
+                  <Button asChild size="lg" className="w-full sm:w-auto rounded-none h-14 px-8 bg-stone-950 text-stone-50 hover:bg-stone-800 uppercase tracking-widest font-bold">
+                    <Link to="/product/$id" params={{ id: "essential-polo" }}>
+                      Shop Now
+                    </Link>
+                  </Button>
+                </div>
+              </div>
             </div>
           </div>
         </section>
