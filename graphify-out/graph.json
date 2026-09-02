@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T20:14:49.392845+00:00",
+  "generated_at": "2026-09-02T20:28:39.017457+00:00",
   "files": [
     {
       "path": "eslint.config.js",
@@ -62,6 +62,18 @@
       "bytes": 576
     },
     {
+      "path": "src/routes/privacy-policy.tsx",
+      "bytes": 5373
+    },
+    {
+      "path": "src/routes/shipping-policy.tsx",
+      "bytes": 5806
+    },
+    {
+      "path": "src/routes/terms-of-service.tsx",
+      "bytes": 5433
+    },
+    {
       "path": "src/routes/README.md",
       "bytes": 835
     },
@@ -71,11 +83,19 @@
     },
     {
       "path": "src/routes/index.tsx",
-      "bytes": 16462
+      "bytes": 16554
+    },
+    {
+      "path": "src/routes/contact.tsx",
+      "bytes": 7026
     },
     {
       "path": "src/routes/__root.tsx",
       "bytes": 4064
+    },
+    {
+      "path": "src/routes/return-policy.tsx",
+      "bytes": 5175
     },
     {
       "path": "src/lib/lovable-error-reporting.ts",
@@ -360,6 +380,18 @@
       "target": "react"
     },
     {
+      "source": "src/routes/privacy-policy.tsx",
+      "target": "@tanstack/react-router"
+    },
+    {
+      "source": "src/routes/shipping-policy.tsx",
+      "target": "@tanstack/react-router"
+    },
+    {
+      "source": "src/routes/terms-of-service.tsx",
+      "target": "@tanstack/react-router"
+    },
+    {
       "source": "src/routes/product.$id.tsx",
       "target": "@tanstack/react-router"
     },
@@ -381,6 +413,18 @@
     },
     {
       "source": "src/routes/index.tsx",
+      "target": "../components/ui/button"
+    },
+    {
+      "source": "src/routes/contact.tsx",
+      "target": "@tanstack/react-router"
+    },
+    {
+      "source": "src/routes/contact.tsx",
+      "target": "lucide-react"
+    },
+    {
+      "source": "src/routes/contact.tsx",
       "target": "../components/ui/button"
     },
     {
@@ -402,6 +446,10 @@
     {
       "source": "src/routes/__root.tsx",
       "target": "../lib/lovable-error-reporting"
+    },
+    {
+      "source": "src/routes/return-policy.tsx",
+      "target": "@tanstack/react-router"
     },
     {
       "source": "src/lib/utils.ts",
