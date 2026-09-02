@@ -133,6 +133,10 @@
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
   * {
     border-color: var(--color-border);
   }
@@ -140,5 +144,15 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+  }
+}
+/* No-scrollbar utility for tabs container */
+@layer utilities {
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 }
